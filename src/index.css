@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "tailwindcss-intersect";
+@import "tailwindcss-animated";
+
+.banner-bg{
+  background-color: rgb(109, 231, 254);
+}
+
+body{
+  background-color: #e6dde5;
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+}
