@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://MattyMeans19.github.io/small-business-template",
+  "homepage": "https://mattymeans19.github.io/small-business-template/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predepoly": "npm run dist",
+    "predepoly": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
