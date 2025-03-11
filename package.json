@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/MattyMeans19/small-business-template",
+  "homepage": "https://MattyMeans19.github.io/small-business-template",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
