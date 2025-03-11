@@ -1,13 +1,18 @@
 import React from "react";
-
+import { NavLink } from "react-router";
 function Navbar(){
+
     return(
-        <div className="flex flex-wrap lg:flex-nowrap place-content-center lg:gap-30 bg-sky-500 sm:px-25">
-        <button className="border-double border-5 border-t-0 border-black rounded-b-lg px-10 text-[1.5em] text-white w-[100%] hover:bg-blue-400 bg-sky-600">Home</button>
-        <button className="border-double border-5 border-t-0 border-black rounded-b-lg px-10 text-[1.5em] text-white w-[100%] hover:bg-blue-400 bg-sky-600">Products</button>
-        <button className="border-double border-5 border-t-0 border-black rounded-b-lg px-10 text-[1.5em] text-white w-[100%] hover:bg-blue-400 bg-sky-600">About</button>
-        <button className="border-double border-5 border-t-0 border-black rounded-b-lg px-10 text-[1.5em] text-white w-[100%] hover:bg-blue-400 bg-sky-600">Contact</button>
-    </div>
+        <div>
+           <div className="flex flex-wrap lg:flex-nowrap place-content-center lg:gap-30 bg-sky-500 sm:px-25 rounded-b-lg w-[75%] place-self-center">
+                <button className="border-double border-5 border-t-0 border-black rounded-b-lg text-[1.5em] text-white lg:w-[10%] hover:bg-blue-400 bg-sky-600"><NavLink to="/">Home</NavLink></button>
+                <button className="border-double border-5 border-t-0 border-black rounded-b-lg text-[1.5em] text-white lg:w-[10%] hover:bg-blue-400 bg-sky-600">Products</button>
+                <button className="border-double border-5 border-t-0 border-black rounded-b-lg text-[1.5em] text-white lg:w-[10%] hover:bg-blue-400 bg-sky-600"><NavLink to="/about">About</NavLink></button>
+                <button className="border-double border-5 border-t-0 border-black rounded-b-lg text-[1.5em] text-white lg:w-[10%] hover:bg-blue-400 bg-sky-600"><NavLink to="/contact">Contact</NavLink></button>
+            </div> 
+            <p className="place-self-center animate-bounce animate-infinite animate-ease-in animate-reverse mt-2">☝️You could have a navigation bar with buttons to other pages☝️</p>
+        </div>
+        
     )
 }
 
