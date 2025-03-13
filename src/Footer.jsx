@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 function Footer(props){
     const year = new Date().getFullYear();
@@ -9,8 +10,8 @@ function Footer(props){
              <p className="text-[1em] place-self-center animate-bounce animate-infinite animate-ease-in">👇 Here in the footer you can also have links to different pages that may not need as much attention as others. 👇</p>
             <div className="bg-white flex flex-wrap gap-10 lg:gap-52 justify-center text-[1.5em]">
                 <p>Copyright ©️YourBusiness {year}</p>
-                <a href="/about" className="text-sky-400">About</a>
-                <a href="/contact" className="text-sky-400">Contact</a>
+                <h2 className="text-sky-400"><Link to="/about">About</Link></h2>
+                <h2 className="text-sky-400"><Link to="/contact">Contact</Link></h2>
             </div>
         </div>
 
