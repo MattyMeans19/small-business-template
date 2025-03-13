@@ -18,17 +18,17 @@ function App() {
             <PageCard 
                 title="Products"
                 content="Link to product page, an image, and info would go here"
-                link = "products"
+                link = "/products"
             />
             <PageCard 
                 title="About"
                 content="Link to About page, an image, and info would go here"
-                link = "about"
+                link = "/about"
             />
             <PageCard 
                 title="Contact"
                 content="Link to Contact page, an image, and info would go here"
-                link = "contact"
+                link = "/contact"
             />
         </div>
 
