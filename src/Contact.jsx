@@ -17,7 +17,7 @@ function Contact(){
             </div>
             
             <Footer
-                position = "absolute"
+                position = "xlg:absolute"
             />
         </div>
     )

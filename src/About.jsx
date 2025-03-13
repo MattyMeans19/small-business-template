@@ -13,7 +13,7 @@ function About(){
                 <p className="text-[2rem]">It can be as long or short as you need it to be and have a variety of other things like photos or videos!</p>
             </div>
             <Footer 
-                position = "absolute"
+                position = "xlg:absolute"
             />
         </div>
     )
