@@ -1,18 +1,21 @@
 import { useState } from 'react'
-import Navbar from "./NavBar";
-import PageCard from "./PageCards";
-import Banner from "./Banner";
-import Footer from "./Footer";
+import Navbar from "./components/NavBar";
+import PageCard from "./components/PageCards";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import TextBox from './components/TextBox';
 
 function App() {
 
   return(
-    <div className='relative min-h-[100vh] max-w-[100vw]'>
+    <div className=''>
         <Banner />
         <Navbar />
-       <div className='px-10 mt-50 border-double border-10 mx-[5%] xlg:mx-100 rounded-3xl bg-linear-to-br from-sky-300 to-cyan-100 mb-30'>
-            <p className='place-self-center text-[1.5rem] lg:text-[3rem]'>Down here you could have anything you want! A greeting for customers and/or a short summary for your business.</p>
-        </div>
+        <TextBox 
+            title="Introduction"
+            body="This would be the main page of your site. Here you could have a quick greeting for your customers or a brief summary of your business."
+            ending="Text can be any size or style you want, and be as long as you need it. Add photos or videos for extra flair!"
+        />
         <p className="place-self-center mb-10 animate-bounce animate-infinite animate-ease-in">👇 Or you could have 'Cards' that link to other pages with a brief description of the page content 👇</p>
         <div className="flex flex-wrap gap-30 justify-evenly mb-25">
             <PageCard 
@@ -32,9 +35,7 @@ function App() {
             />
         </div>
 
-        <Footer 
-            position = "lg:relative"
-        />
+        <Footer />
     </div>
     
 )

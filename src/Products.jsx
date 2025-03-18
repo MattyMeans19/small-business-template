@@ -1,21 +1,24 @@
 import React, {useState} from "react";
-import Banner from "./Banner";
-import Navbar from "./NavBar";
-import ProductView from "./ProductView";
-import Footer from "./Footer";
+import Banner from "./components/Banner";
+import Navbar from "./components/NavBar";
+import ProductView from "./components/ProductView";
+import Footer from "./components/Footer";
+import TextBox from "./components/TextBox";
 
 function Products(){
 
 
     return(
-        <div className="min-h-[100vh] relative">
+        <div>
             <Banner />
             <Navbar />
-            <h1 className="border-solid border-5 mx-[20%] my-[5%] text-[2em] text-center bg-blue-200">Here you could have a list of the different products you sell.</h1>
+            <TextBox 
+                title="The crown jewel: Your Product Page!"
+                body="It's important to have a functioning product menu where users can browse products and add them to their cart!"
+                ending="Try out the product menu template below 👇"
+            />
             <ProductView />
-            <Footer 
-                position="xlg:absolute"
-            />  
+            <Footer />  
         </div>
     )
 }

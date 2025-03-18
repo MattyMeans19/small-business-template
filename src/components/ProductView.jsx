@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 import BigProductCard from "./BigProductCard";
 import productTypes from "./ProdcutTypes";
 import ProductOption from "./ProductOptions";
-import inventory from "./Inventory";
+import inventory from "../Inventory";
 
 function ProductView(){
     const [typeSelected, changeTypeSelected] = useState(false)
@@ -35,10 +35,10 @@ function ProductView(){
 
 
         return(
-            <div>
-                <div className="my-[5%] mx-[2%] p-5 border-double border-10 bg-sky-200 lg:grid grid-cols-6 gap-2 flex flex-wrap">
-                    <div className="flex flex-wrap gap-5">
-                    <h1 className="text-center text-[2em] mb-[5%] underline col-start-1 col-span-2">Products</h1>
+            <div className="justify-center lg:grid grid-cols-6">
+                {!productSelected && <div className="my-[5%] mx-[2%] p-5 border-double border-10 bg-sky-200 col-start-1 row-start-1 lg:grid grid-cols-6 grid-rows-5 col-span-full gap-2 flex flex-wrap">
+                    <div className="flex flex-wrap place-content-center lg:place-content-start gap-2 border-double border-5 shadow-2xl shadow-gray-600 p-5 row-span-full">
+                    <h1 className="text-center text-[2em] mb-1 underline col-start-1 col-span-2 flex-1/1">Products</h1>
                         {productTypes.map((option) =>
                         <ProductOption 
                             key={option.id}
@@ -48,7 +48,7 @@ function ProductView(){
                         />
                         )}
                     </div>
-                    <div className="col-start-2 col-span-full flex flex-wrap lg:grid grid-cols-3 gap-10">
+                    <div className="col-start-2 col-span-full flex flex-wrap place-content-center lg:grid grid-cols-3 gap-10">
                     {!typeSelected && <h1 className="text-[2.5em] col-span-full text-center">Select a product type to browse!</h1>}
                         {typeSelected && viewList.map((product) => 
                             <ProductCard 
@@ -63,8 +63,8 @@ function ProductView(){
                             />
                         )}
                     </div>
-                </div>
-                {productSelected && <div className="fixed top-5 w-full my-[5%]">
+                </div>}
+                {productSelected && <div className="col-start-1 row-start-1 col-span-full row-span-full mb-15">
                         <BigProductCard 
                             key={productView[0].id}
                             sku={productView[0].id}
@@ -75,7 +75,7 @@ function ProductView(){
                             img={productView[0].img}
                             onExit={ExitView}
                         />
-                    </div>}
+                        </div>}
             </div>
         )
 }
