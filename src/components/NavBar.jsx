@@ -6,7 +6,7 @@ function Navbar(){
 
     return(
         <div>
-           <div className="flex flex-wrap lg:flex-nowrap place-content-center lg:gap-30 bg-sky-500 sm:px-25 rounded-b-lg w-[75%] place-self-center">
+           <div className="flex flex-wrap lg:flex-nowrap place-content-center gap-2 lg:gap-30 bg-sky-500 sm:px-25 rounded-b-lg w-[75%] place-self-center">
                 <button className="border-double border-5 border-t-0 border-black rounded-b-lg text-[1.5em] text-white xlg:w-[10%] hover:bg-blue-400 bg-sky-600"><NavLink to="/">Home</NavLink></button>
                 <button className="border-double border-5 border-t-0 border-black rounded-b-lg text-[1.5em] text-white xlg:w-[10%] hover:bg-blue-400 bg-sky-600"><NavLink to="/products">Products</NavLink></button>
                 <button className="border-double border-5 border-t-0 border-black rounded-b-lg text-[1.5em] text-white xlg:w-[10%] hover:bg-blue-400 bg-sky-600"><NavLink to="/about">About</NavLink></button>

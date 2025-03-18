@@ -10,7 +10,7 @@ function About(){
             <Banner />
             <Navbar />
             <TextBox 
-                title="Tell your customers about yourself/your business!"
+                title="Tell your customers about yourself or your business!"
                 body="Here you could display all the information you want about your business/services for potential customers to see."
                 ending="It can be as long or short as you need it to be and have a variety of other things like photos or videos!"
             />

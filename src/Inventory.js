@@ -6,7 +6,8 @@ const inventory=[
         img: "Image goes here",
         info: "Product description goes here",
         sku: "Product SKU",
-        price: "$xx.xx"
+        price: "$xx.xx",
+        stock: 5
     },
     {
         id: "2",
@@ -15,7 +16,8 @@ const inventory=[
         img: "Image goes here",
         info: "Product description goes here",
         sku: "Product SKU",
-        price: "$xx.xx"
+        price: "$xx.xx",
+        stock: 8
     },
     {
         id: "3",
@@ -24,7 +26,8 @@ const inventory=[
         img: "Image goes here",
         info: "Product description goes here",
         sku: "Product SKU",
-        price: "$xx.xx"
+        price: "$xx.xx",
+        stock: 3
     },
     {
         id: "4",
@@ -33,7 +36,8 @@ const inventory=[
         img: "Image goes here",
         info: "Product description goes here",
         sku: "Product SKU",
-        price: "$xx.xx"
+        price: "$xx.xx",
+        stock: 9
     },
     {
         id: "5",
@@ -42,7 +46,8 @@ const inventory=[
         img: "Image goes here",
         info: "Product description goes here",
         sku: "Product SKU",
-        price: "$xx.xx"
+        price: "$xx.xx",
+        stock: 7
     },
     {
         id: "6",
@@ -51,7 +56,8 @@ const inventory=[
         img: "Image goes here",
         info: "Product description goes here",
         sku: "Product SKU",
-        price: "$xx.xx"
+        price: "$xx.xx",
+        stock: 2
     },
     {
         id: "7",
@@ -60,7 +66,8 @@ const inventory=[
         img: "Image goes here",
         info: "Product description goes here",
         sku: "Product SKU",
-        price: "$xx.xx"
+        price: "$xx.xx",
+        stock: 4
     },
     {
         id: "8",
@@ -69,7 +76,8 @@ const inventory=[
         img: "Image goes here",
         info: "Product description goes here",
         sku: "Product SKU",
-        price: "$xx.xx"
+        price: "$xx.xx",
+        stock: 6
     },
     {
         id: "9",
@@ -78,7 +86,8 @@ const inventory=[
         img: "Image goes here",
         info: "Product description goes here",
         sku: "Product SKU",
-        price: "$xx.xx"
+        price: "$xx.xx",
+        stock: 0
     },
 ]
 

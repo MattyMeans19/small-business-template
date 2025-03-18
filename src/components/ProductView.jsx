@@ -56,7 +56,7 @@ function ProductView(){
                                 sku={product.id}
                                 title={product.name}
                                 description={product.info}
-                                type={product.type}
+                                stock={product.stock}
                                 price={product.price}
                                 img={product.img}
                                 onSelect={viewProduct}
@@ -70,7 +70,7 @@ function ProductView(){
                             sku={productView[0].id}
                             title={productView[0].name}
                             description={productView[0].info}
-                            type={productView[0].type}
+                            stock={productView[0].stock}
                             price={productView[0].price}
                             img={productView[0].img}
                             onExit={ExitView}
