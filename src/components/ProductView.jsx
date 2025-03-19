@@ -4,6 +4,7 @@ import BigProductCard from "./BigProductCard";
 import productTypes from "./ProdcutTypes";
 import ProductOption from "./ProductOptions";
 import inventory from "../Inventory";
+import cart from "./Cart";
 
 function ProductView(){
     const [typeSelected, changeTypeSelected] = useState(false)
@@ -31,6 +32,16 @@ function ProductView(){
     }
     function ExitView(){
         changeProductSelected(false)
+    }
+
+    function addToCart(sku, amount){
+        const cartItem = inventory.filter((item) => item.sku == sku);
+        for(let i = 0; i < amount; i++){
+            cart.push(cartItem);
+        }
+        
+    
+        console.log(cart);
     }
 
 
@@ -67,13 +78,14 @@ function ProductView(){
                 {productSelected && <div className="col-start-1 row-start-1 col-span-full row-span-full mb-15">
                         <BigProductCard 
                             key={productView[0].id}
-                            sku={productView[0].id}
+                            sku={productView[0].sku}
                             title={productView[0].name}
                             description={productView[0].info}
                             stock={productView[0].stock}
                             price={productView[0].price}
                             img={productView[0].img}
                             onExit={ExitView}
+                            itemAdded={addToCart}
                         />
                         </div>}
             </div>

@@ -9,7 +9,7 @@ function Products(){
 
 
     return(
-        <div>
+        <div  className='flex flex-col flex-grow'>
             <Banner />
             <Navbar />
             <TextBox 

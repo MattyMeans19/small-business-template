@@ -5,8 +5,8 @@ const inventory=[
         name: "Product Name",
         img: "Image goes here",
         info: "Product description goes here",
-        sku: "Product SKU",
-        price: "$xx.xx",
+        sku: "1001",
+        price: 10.99,
         stock: 5
     },
     {
@@ -15,8 +15,8 @@ const inventory=[
         name: "Product Name",
         img: "Image goes here",
         info: "Product description goes here",
-        sku: "Product SKU",
-        price: "$xx.xx",
+        sku: "2002",
+        price: 15.99,
         stock: 8
     },
     {
@@ -25,8 +25,8 @@ const inventory=[
         name: "Product Name",
         img: "Image goes here",
         info: "Product description goes here",
-        sku: "Product SKU",
-        price: "$xx.xx",
+        sku: "3003",
+        price: 29.99,
         stock: 3
     },
     {
@@ -35,8 +35,8 @@ const inventory=[
         name: "Product Name",
         img: "Image goes here",
         info: "Product description goes here",
-        sku: "Product SKU",
-        price: "$xx.xx",
+        sku: "4004",
+        price: 24.99,
         stock: 9
     },
     {
@@ -45,8 +45,8 @@ const inventory=[
         name: "Product Name",
         img: "Image goes here",
         info: "Product description goes here",
-        sku: "Product SKU",
-        price: "$xx.xx",
+        sku: "5005",
+        price: 32.99,
         stock: 7
     },
     {
@@ -55,8 +55,8 @@ const inventory=[
         name: "Product Name",
         img: "Image goes here",
         info: "Product description goes here",
-        sku: "Product SKU",
-        price: "$xx.xx",
+        sku: "6006",
+        price: 19.99,
         stock: 2
     },
     {
@@ -65,8 +65,8 @@ const inventory=[
         name: "Product Name",
         img: "Image goes here",
         info: "Product description goes here",
-        sku: "Product SKU",
-        price: "$xx.xx",
+        sku: "7007",
+        price: 22.99,
         stock: 4
     },
     {
@@ -75,8 +75,8 @@ const inventory=[
         name: "Product Name",
         img: "Image goes here",
         info: "Product description goes here",
-        sku: "Product SKU",
-        price: "$xx.xx",
+        sku: "8008",
+        price: 5.99,
         stock: 6
     },
     {
@@ -85,8 +85,8 @@ const inventory=[
         name: "Product Name",
         img: "Image goes here",
         info: "Product description goes here",
-        sku: "Product SKU",
-        price: "$xx.xx",
+        sku: "9009",
+        price: 7.99,
         stock: 0
     },
 ]

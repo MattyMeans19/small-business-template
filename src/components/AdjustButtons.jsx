@@ -6,12 +6,19 @@ function AdjustButtons(props){
     const [amount, adjustAmount] = useState(1)
 
     function Increase(){
-        adjustAmount(amount + 1)
+        if(amount < props.max){
+            const addAmount = amount + 1
+            adjustAmount(addAmount)
+            props.cost(addAmount)
+        }
+        
     }
 
     function Decrease(){
         if(amount > 1){
-            adjustAmount(amount - 1)
+            const minusAmount = amount - 1
+            adjustAmount(minusAmount)
+            props.cost(minusAmount)
         }
     }
 

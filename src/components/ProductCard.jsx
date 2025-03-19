@@ -12,7 +12,7 @@ function ProductCard(props){
                 <h2 className="text-center text-[2rem] row-start-1 col-start-2 col-span-2">{props.title}</h2>
                 <p className="text-center text-[2rem] row-start-2 col-span-full border-solid border-2">{props.img}</p>
                 <p className="text-[1.5rem] text-center row-start-3 col-span-full">{props.description}</p>
-                <h3 className="text-center text-[2rem] row-start-4 col-start-3 col-span-2">{props.price}</h3>  
+                <h3 className="text-center text-[2rem] row-start-4 col-start-3 col-span-2">${props.price}</h3>  
             </div>
         </div>
     )
